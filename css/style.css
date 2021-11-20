@@ -131,6 +131,7 @@ img {
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-size: cover;
 }
 .hero-title {
   color: var(--general-color);
@@ -281,7 +282,8 @@ img {
   display: flex;
   justify-content: center;
 }
-.person-item {
+.person-link {
+  display: block;
   background: mistyrose;
   width: 44px;
   height: 44px;
@@ -307,7 +309,8 @@ img {
   display: flex;
   justify-content: center;
 }
-.custom-item {
+.custom-link {
+  display: block;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -387,7 +390,8 @@ img {
 .social-list {
   display: flex;
 }
-.social-item {
+.social-link {
+  display: block;
   width: 44px;
   height: 44px;
   background: #ffffff1a;
