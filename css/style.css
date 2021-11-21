@@ -310,6 +310,7 @@ img {
   border-radius: 50%;
   color: var(--color-for-svg);
 }
+.person-link:focus,
 .person-link:hover {
   background-color: var(--accent-color);
   color: var(--general-color);
@@ -334,21 +335,23 @@ img {
 .custom-list {
   display: flex;
 }
+
 .custom-link {
   display: flex;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
+  color: var(--color-for-svg);
 }
+.custom-link:focus,
 .custom-link:hover {
   border: 1px solid #2196f3;
+  color: var(--accent-color);
+  fill: currentColor;
 }
 .company-link {
-  fill: var(--color-for-svg);
+  fill: currentColor;
 }
-.company-link:hover {
-  fill: var(--accent-color);
-}
+
 .custom-item:not(:last-child) {
   margin-right: 30px;
 }
