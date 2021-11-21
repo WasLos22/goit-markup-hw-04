@@ -115,18 +115,12 @@ img {
 }
 .header-mail-link {
   margin-right: 10px;
-  fill: var(--main-text-color);
+  fill: currentColor;
 }
-.header-mail-link:hover {
-  fill: var(--accent-color);
-}
+
 .header-tel-link {
   margin-right: 10px;
-  fill: var(--main-text-color);
-  align-items: center;
-}
-.header-tel-link:hover {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .header-mail:hover,
@@ -142,7 +136,6 @@ img {
 /*                   Banner                         */
 
 .main-hero {
-  /* background: var(--fonts-color); */
   background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%),
     url(../images/bg-global.jpg);
   background-repeat: no-repeat;
@@ -200,16 +193,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.04em;
 }
-/* .concept-list::before {
-  content: " ";
-  display: block;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 .block-svg {
   display: block;
   height: 120px;
@@ -312,31 +295,32 @@ img {
   text-align: center;
   border-radius: 0px 0px 4px 4px;
 }
-.person-link:hover {
-  background-color: var(--accent-color);
-  fill: var(--general-color);
-}
 .person-list {
   display: flex;
   justify-content: center;
 }
+.person-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.person-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--general-color);
+}
+
 .person-link {
   display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
-.person-item:not(:last-child) {
-  margin-right: 10px;
+
+.peron-soc-link :hover {
+  fill: var(--general-color);
 }
 .peron-soc-link {
-  width: 20px;
-  height: 20px;
   margin: 12px;
   fill: var(--color-for-svg);
-}
-.peron-soc-link:hover {
-  fill: var(--general-color);
 }
 
 /*                             regular cosomers                        */
@@ -353,22 +337,17 @@ img {
 
 .custom-list {
   display: flex;
-  justify-content: center;
 }
 .custom-link {
-  display: block;
+  display: flex;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  height: 92px;
-  width: 170px;
 }
-.custom-item:hover {
-  color: var(--accent-color);
+.custom-link:hover {
+  border: 1px solid #2196f3;
 }
 .company-link {
-  height: 92px;
-  width: 170px;
   fill: var(--color-for-svg);
 }
 .company-link:hover {
