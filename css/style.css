@@ -303,24 +303,20 @@ img {
   margin-right: 10px;
 }
 
-.person-link:hover {
-  background-color: var(--accent-color);
-  fill: var(--general-color);
-}
-
 .person-link {
   display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--color-for-svg);
 }
-
-.peron-soc-link :hover {
-  fill: var(--general-color);
+.person-link:hover {
+  background-color: var(--accent-color);
+  color: var(--general-color);
 }
 .peron-soc-link {
   margin: 12px;
-  fill: var(--color-for-svg);
+  fill: currentColor;
 }
 
 /*                             regular cosomers                        */
