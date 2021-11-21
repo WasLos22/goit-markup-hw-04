@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --general-color: #ffffff;
   --fonts-color: #2f303a;
+  --color-for-svg: #afb1b8;
 }
 body {
   font-family: "Roboto", "Releway", Arial, Helvetica, sans-serif;
@@ -105,9 +106,27 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-cont:not(:last-child) {
   margin-right: 50px;
+}
+.header-mail-link {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+}
+.header-mail-link:hover {
+  fill: var(--accent-color);
+}
+.header-tel-link {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+  align-items: center;
+}
+.header-tel-link:hover {
+  fill: var(--accent-color);
 }
 
 .header-mail:hover,
@@ -131,7 +150,7 @@ img {
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-size: cover;
+  background-position: center;
 }
 .hero-title {
   color: var(--general-color);
@@ -181,12 +200,27 @@ img {
   line-height: 1.71;
   letter-spacing: 0.04em;
 }
-.concept-block {
-  width: 270px;
+/* .concept-list::before {
+  content: " ";
+  display: block;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+.block-svg {
+  display: block;
+  height: 120px;
+  width: 270px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.concept-svg {
+  background-color: #f5f4fa;
+  margin: 25px 100px;
 }
 .concept-wrapp {
   display: flex;
@@ -278,19 +312,31 @@ img {
   text-align: center;
   border-radius: 0px 0px 4px 4px;
 }
+.person-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--general-color);
+}
 .person-list {
   display: flex;
   justify-content: center;
 }
 .person-link {
   display: block;
-  background: mistyrose;
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 .person-item:not(:last-child) {
   margin-right: 10px;
+}
+.peron-soc-link {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+  fill: var(--color-for-svg);
+}
+.peron-soc-link:hover {
+  fill: var(--general-color);
 }
 
 /*                             regular cosomers                        */
@@ -316,6 +362,17 @@ img {
   border-radius: 4px;
   height: 92px;
   width: 170px;
+}
+.custom-item:hover {
+  color: var(--accent-color);
+}
+.company-link {
+  height: 92px;
+  width: 170px;
+  fill: var(--color-for-svg);
+}
+.company-link:hover {
+  fill: var(--accent-color);
 }
 .custom-item:not(:last-child) {
   margin-right: 30px;
@@ -396,6 +453,19 @@ img {
   height: 44px;
   background: #ffffff1a;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.soc-icon {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+  fill: var(--general-color);
+}
+
+.social-link:focus,
+.social-link:hover {
+  background-color: var(--accent-color);
 }
 .social-item:not(:last-child) {
   margin-right: 10px;
